@@ -1,19 +1,19 @@
-Python Further Advanced
-=======================
+## Python Further Advanced
+
 November 2-6 2026
 
 Toby Dussek
 
-9:30  start
-11:00 coffee
-12:00 lunch until 1:00
-3:00  tea break break until 3:15
-4:30  end
+* 9:30  start
+* 11:00 coffee break until 11:15
+* 12:30 lunch until 1:30
+* 3:00  tea break break until 3:15
+* 4:30  end
 
 All my code will be in this repository
 > https://github.com/onionmccabbage/pythonFurtherAdvancedNov2026
 
-Monday
+### Monday
 > welcome
     - introduce yourself
     - existing Python experience
@@ -33,21 +33,19 @@ Monday
 > constructor, Decorator and Factory pattern
 > Facade, command and proxy pattern
 > anti-patterns: when things go wrong and you do it again!
-> classes: encapsulation, inheritance, private and protected members
+> Abstract base class, class encapsulation, inheritance, private and protected members
 > Polymorphism and monkey-patching
 > Memory, performance and timing
-> New profile features in 3.15 (and retirement of old profile tools)
+> New profiling features in 3.15 (and retirement of old profile tools)
 > after lunch review exercise (show what you built)
 > immediate Python
 > redirection and context
-> Abstract base class
 > we will need Jupyter Notebooks later in the week
 
-Tuesday
+### Tuesday
 > how to access the course recordings
-> using __str__ and __repr__
+> reminder: `__str__`, `__repr__` and `__slots__`
 > architectural patterns: inheritance, composition...
-> __slots__
 > stateful pattern
 > functional design
 > concurrency and parallel code
@@ -63,7 +61,7 @@ Tuesday
 > thread locks/rlocks/semaphores
 > semaphore quantity depends on the capabilities of the asset being accessed
 
-Wednesday
+### Wednesday
 > generators and comprehension
 > a word about venv see https://python.land/virtual-environments/virtualenv
 > daemon threads, thread events
@@ -84,7 +82,7 @@ Wednesday
 > RxPY https://rxpy.readthedocs.io/en/latest/index.html
        https://rxmarbles.com/
 
-Thursday
+### Thursday
 > options for Jupyter Notebooks:
   - use Anaconda (NB it is likely you cannot use the free Anaconda within Ericsson)
   - pip install notebook (see https://jupyter.org/install)
@@ -116,7 +114,7 @@ Thursday
 > data vizualisation with matplotlib
 > after lunch review exercise
 
-Friday
+### Friday
 > statistical analysis and correlation
   REMEMBER: correlation does NOT prove CAUSATION
   https://www.tylervigen.com/spurious-correlations

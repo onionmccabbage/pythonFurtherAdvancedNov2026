@@ -30,8 +30,8 @@ All my code will be in this repository
   https://blog.ahmadwkhan.com/design-patterns-in-python-the-complete-reference
   https://python-patterns.guide/
   
-* Constructor, Decorator and Factory pattern
-* Abstract base class, class encapsulation, inheritance, private and protected members
+> Constructor, Decorator and Factory pattern
+> Abstract base class, class encapsulation, inheritance, private and protected members
 * Facade, Command and Proxy pattern
 * anti-patterns: when things go wrong and you do it again!
 * Polymorphism and monkey-patching

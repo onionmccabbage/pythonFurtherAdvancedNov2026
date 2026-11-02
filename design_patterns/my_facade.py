@@ -21,8 +21,6 @@ class Technician:
     def doTechyStuff(stuff):
         print('equipment is in place and configured')
 
-
-
 class Artisan:
     def __init__(self):
         print('designing things')
@@ -50,4 +48,5 @@ class Manager:
 
 
 if __name__ == '__main__':
-    pass
+    m = Manager()
+    m.arrange()

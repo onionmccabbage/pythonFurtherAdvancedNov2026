@@ -6,7 +6,7 @@ Toby Dussek
 
 * 9:30  start
 * 11:00 coffee break until 11:15
-* 12:30 lunch until 1:30
+* 12:00 lunch until 1:00
 * 3:00  tea break break until 3:15
 * 4:30  end
 

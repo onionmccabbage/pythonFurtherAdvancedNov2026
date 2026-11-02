@@ -35,8 +35,6 @@ All my code will be in this repository
 * anti-patterns: when things go wrong and you do it again!
 * Abstract base class, class encapsulation, inheritance, private and protected members
 * Polymorphism and monkey-patching
-* Memory, performance and timing
-* New profiling features in 3.15 (and retirement of old profile tools)
 * after lunch review exercise (show what you built)
 * immediate Python
 * redirection and context
@@ -74,7 +72,8 @@ All my code will be in this repository
 * why use asyncio, threads or a processes
   see https://medium.com/@Gayathri_krish/threading-vs-multiprocessing-vs-asyncio-in-python-which-one-should-you-use-7a3b7649d004
   and https://www.krython.com/tutorial/python/threading-vs-multiprocessing-vs-asyncio
-* performance and timing
+* Memory, performance and timing
+* New profiling features in 3.15 (and retirement of old profile tools)
 * profiling with @profile, cProfile and the new profiling tools in 3.15
 * after lunch review exercise
 * prepare for Thursday  

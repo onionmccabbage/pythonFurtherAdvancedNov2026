@@ -18,8 +18,10 @@ class Intern(Employee): # NB usually separate classes live in separate modules
     # NB inheritance works even without calling the parent __init__ method
     # def __init__(self, name, age, isAdmin):
     #     super().__init__(name, age, isAdmin)
+    def showAge(self): # leadin underscore indicates a protected member
+        return f'{self.name} is {self._age} years old'
     def askForHelp(self):
-        # can we also access private members?
+        # can we also access private members? Fails since we cannot acces private members
         if self.__isAdmin: # __isAdmin is NOT inherited (it is trully private)
             return('leave it with me, I\'ll ger back to you')
         else:
@@ -29,6 +31,12 @@ if __name__ == '__main__':
     emp = Intern('Ross', 30, True)
     # which members can we access
     print(emp.name) # all good (it is a public property)
-    print(emp._age) # we can access the _age property, since it is inherited
+    print(emp.showAge()) # we can access the _age property, since it is inherited
     # print(emp.__isAdmin) # should fail, since member is private
-    print(emp.askForHelp()) # NB we can also access protected methods here!!
+    # print(emp.askForHelp()) # NB we can also access protected methods here!!
+
+    # Be aware, even though we should use name-mangling, it does not completely hide the member
+    e = Employee('Rachel', 32, True)
+    print( e._Employee__isAdmin) # we CAN access mangled members
+
+    

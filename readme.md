@@ -40,14 +40,14 @@ All my code will be in this repository
 > Polymorphism and monkey-patching
 > after lunch review exercise (show what you built)
 * immediate Python
-* redirection and context
+> redirection and context
 * we will need Jupyter Notebooks later in the week
 
 ### Tuesday
 * how to access the course recordings
 * reminder: `__str__`, `__repr__` and `__slots__`
-* architectural patterns: inheritance, composition...
-* stateful pattern
+> architectural patterns: inheritance, composition...
+> stateful pattern
 * functional design
 * concurrency and parallel code
 * the GIL

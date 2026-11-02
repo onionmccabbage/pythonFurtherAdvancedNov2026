@@ -75,7 +75,7 @@ All my code will be in this repository
   see https://medium.com/@Gayathri_krish/threading-vs-multiprocessing-vs-asyncio-in-python-which-one-should-you-use-7a3b7649d004
   and https://www.krython.com/tutorial/python/threading-vs-multiprocessing-vs-asyncio
 * performance and timing
-* profiling with @profile and cProfile
+* profiling with @profile, cProfile and the new profiling tools in 3.15
 * after lunch review exercise
 * prepare for Thursday  
 * observables and subscribers

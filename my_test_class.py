@@ -2,6 +2,8 @@
 class Tester(list):
     def __str__(self): # every object has a default __str__ method used by 'print'
         return f'Tester contains {super().__str__()}'
+    def __repr__(self):
+        return f'Values are: {super().__repr__()}'
 
 if __name__ == '__main__':
     c1 = Tester((1,2,3,4,5))

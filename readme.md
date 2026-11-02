@@ -24,7 +24,7 @@ All my code will be in this repository
 * conventions
   - as will all languages, identifiers can use letters, numbers and underscore (don't start with a number)
   - some conventions: ClassesUsePascalCase, methodsUseCamelCase identifiers_use_snake_case
-* design patterns - following proven good practices
+> design patterns - following proven good practices
   https://refactoring.guru/design-patterns/python
   https://www.geeksforgeeks.org/python/python-design-patterns/
   https://blog.ahmadwkhan.com/design-patterns-in-python-the-complete-reference

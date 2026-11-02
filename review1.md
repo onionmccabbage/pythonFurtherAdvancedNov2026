@@ -1,4 +1,4 @@
-## Further Advanced Python Review Exercise 1 (40 mins)
+## Further Advanced Python Review Exercise 1 (40 mins until 2:50)
 
 Individually or in groups, tackle as many of these challenges as you like, in any order
 

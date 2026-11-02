@@ -33,12 +33,12 @@ All my code will be in this repository
 > Constructor, Decorator and Factory pattern
 > Abstract base class, class encapsulation, inheritance, private and protected members
 > Facade, Command
-* Proxy pattern
-* Facade and Command are similar: command lets us manage a queue of commands
+> Proxy pattern: many ways to implement
+> Facade and Command are similar: command lets us manage a queue of commands
 > All patterns are just repeating what worked
 > anti-patterns: when things go wrong and you do it again!
-* Polymorphism and monkey-patching
-* after lunch review exercise (show what you built)
+> Polymorphism and monkey-patching
+> after lunch review exercise (show what you built)
 * immediate Python
 * redirection and context
 * we will need Jupyter Notebooks later in the week

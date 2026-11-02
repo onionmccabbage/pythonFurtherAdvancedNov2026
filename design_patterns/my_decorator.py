@@ -22,4 +22,4 @@ def squares(m,n):
 
 
 if __name__ == '__main__':
-    print(squares(1,11))
+    print(squares(1,n=11))

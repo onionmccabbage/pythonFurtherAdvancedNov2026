@@ -1,3 +1,5 @@
+from my_decorator import showArgs
+
 # Polymorphism lets things behave in several ways
 
 def builtInPol():
@@ -33,6 +35,7 @@ class Eraser:
 # we may choose to specify a return type. Python does not implement the type check at runtime
 # This is for dev-time tools which may catch type problems
 # Pycharm and Pylance have tools to warn of type problems at design time
+@showArgs
 def performTask(tool:object)->str:
     '''use a (typed) tool to perform a task'''
     # this may also involve conditional logic

@@ -6,7 +6,7 @@
 import class_protected as clap
 
 # declare a new function (to bee used as a monkey patch)
-def munction(self):
+def munction(self):  # we include 'self' since this will be used in a class
     return 'This simian is of unknown age'
 
 #replace the 'showAge' method with our new function

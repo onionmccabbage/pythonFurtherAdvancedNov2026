@@ -14,7 +14,7 @@ All my code will be in this repository
 * https://github.com/onionmccabbage/pythonFurtherAdvancedNov2026
 
 ### Monday
-* welcome
+> welcome
   - introduce yourself
   - existing Python experience
   - application of Python from previous lcourses

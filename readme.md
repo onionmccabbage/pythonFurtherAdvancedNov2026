@@ -63,7 +63,7 @@ Recordings available here
   see https://realpython.com/python-gil/
   from 3.14 (Oct 7 2025) we can avoid the GIL
   see https://www.pythoncheatsheet.org/blog/python-3-14-breaking-free-from-gil
-> thread functions and thread classes
+* thread functions and thread classes
 * after lunch review exercise
 * can we kill threads which have hung or other problems....
   we never kill threads (there is no mechanism in Python)

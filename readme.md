@@ -59,25 +59,25 @@ Recordings available here
 > timing (as a performance metric)
 > functional design: use map, filter, reduce as performant functional operations
 > concurrency and parallel code
-* the GIL
+> the GIL
   see https://realpython.com/python-gil/
   from 3.14 (Oct 7 2025) we can avoid the GIL
   see https://www.pythoncheatsheet.org/blog/python-3-14-breaking-free-from-gil
 > thread functions and thread classes
 > after lunch review exercise
-* can we kill threads which have hung or other problems....
+> can we kill threads which have hung or other problems....
   we never kill threads (there is no mechanism in Python)
   we manage threads e.g. https://www.geeksforgeeks.org/python/python-different-ways-to-kill-a-thread/
-* thread locks/rlocks/semaphores
-* semaphore quantity depends on the capabilities of the asset being accessed
+> thread locks/rlocks/semaphores
+> semaphore concurrent depends on the capabilities of the asset being accessed
 
 ### Wednesday
 * create a thread-divvy version for Weds
-* comclude threading: thread-safety decorator example
-* generators and comprehension
-* a word about venv see https://python.land/virtual-environments/virtualenv
-* daemon threads, thread events
+* comclude threading: thread-safety decorator example (75 lines or so)
 * custom thread decorator to make classes and methods thread safe
+* range generators and comprehension: really good for performance
+* a word about venv see https://python.land/virtual-environments/virtualenv
+> daemon threads, thread events
 * solve the double-locking problem (both decorators)
 * the 'with' operator
 * asyncio (Python 3.7 or better)
@@ -131,7 +131,7 @@ Recordings available here
 * statistical analysis and correlation
   REMEMBER: correlation does NOT prove CAUSATION
   https://www.tylervigen.com/spurious-correlations
-* review of microservices
+* review of microservices and concurrency (this impacts on thread semaphores)
 * multi threading
 * asyncio microservices
 * we can control the number of concurrent accesses to our microservice....

@@ -73,6 +73,7 @@ Recordings available here
 
 ### Wednesday
 * create a thread-divvy version for Weds
+* comclude threading: thread-safety decorator example
 * generators and comprehension
 * a word about venv see https://python.land/virtual-environments/virtualenv
 * daemon threads, thread events

@@ -12,6 +12,14 @@ Toby Dussek
 
 All my code will be in this repository
 * https://github.com/onionmccabbage/pythonFurtherAdvancedNov2026
+* NB this will only exist for a while after end of course
+
+
+Recordings available here
+* https://learn.neueda.com/course/482357
+* Sign up with any email/password
+* Course Reg Code: HGUWTO
+* Careful - these will only be available for a few days after the end of course
 
 ### Monday
 > welcome
@@ -39,15 +47,16 @@ All my code will be in this repository
 > anti-patterns: when things go wrong and you do it again!
 > Polymorphism and monkey-patching
 > after lunch review exercise (show what you built)
-* immediate Python
+> immediate Python
 > redirection and context
 * we will need Jupyter Notebooks later in the week
 
 ### Tuesday
 * how to access the course recordings
-* reminder: `__str__`, `__repr__` and `__slots__`
+> reminder: `__str__`, `__repr__` and `__slots__`
 > architectural patterns: inheritance, composition...
 > stateful pattern
+* timing (as a performance metric)
 * functional design
 * concurrency and parallel code
 * the GIL
@@ -57,7 +66,7 @@ All my code will be in this repository
 * thread functions and thread classes
 * after lunch review exercise
 * can we kill threads which have hung or other problems....
-  we never kill thrreads (there is no mechanism in Python)
+  we never kill threads (there is no mechanism in Python)
   we manage threads e.g. https://www.geeksforgeeks.org/python/python-different-ways-to-kill-a-thread/
 * thread locks/rlocks/semaphores
 * semaphore quantity depends on the capabilities of the asset being accessed

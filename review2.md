@@ -1,4 +1,4 @@
-## Python Review Exercise 2
+## Python Review Exercise 2 (at least until 2:40)
 
 remember - look online, ask me, ask each other.... work in teams
 
@@ -40,7 +40,6 @@ Print out the temperature for each of the cities
 
 Optionaly include code to time how long it takes to retrieve all the weather reports
 Remember to code against the main types of error that might occur here
-
 
 Optional
 --------

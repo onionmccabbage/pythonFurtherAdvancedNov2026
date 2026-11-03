@@ -56,8 +56,8 @@ Recordings available here
 > reminder: `__str__`, `__repr__` and `__slots__`
 > architectural patterns: inheritance, composition...
 > stateful pattern
-* timing (as a performance metric)
-* functional design
+> timing (as a performance metric)
+> functional design: use map, filter, reduce as performant functional operations
 * concurrency and parallel code
 * the GIL
   see https://realpython.com/python-gil/

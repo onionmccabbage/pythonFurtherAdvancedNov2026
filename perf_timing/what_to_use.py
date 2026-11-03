@@ -73,3 +73,10 @@ if __name__ == '__main__':
     elapsed1 = time.perf_counter()
     elapsed1_ns = time.perf_counter_ns()
     print(f'Operation A took {elapsed1-start1} sec, or {elapsed1_ns-start1_ns} nanosec')
+
+    start2 = time.perf_counter()
+    start2_ns = time.perf_counter_ns() # nanoseconds
+    fnB()
+    elapsed2 = time.perf_counter()
+    elapsed2_ns = time.perf_counter_ns()
+    print(f'Operation B took {elapsed2-start2} sec, or {elapsed2_ns-start2_ns} nanosec')

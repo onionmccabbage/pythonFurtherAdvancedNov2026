@@ -7,6 +7,7 @@ class Weather():
         self.city = city
         self.desc = desc # make use of the setter methods
         self.temp = temp
+    # we could use a custom validation decorator here
     @property
     def city(self):
         return self.__city
@@ -29,7 +30,7 @@ class Weather():
     def temp(self):
         return self.__temp
     @temp.setter
-    def temp(self, new_temp):
+    def temp(self, new_temp:int | float):
         if type(new_temp) == int or type(new_temp) == float:
             self.__temp = new_temp
         else:

@@ -1,4 +1,4 @@
-## Python Review Exercise 2 (at least until 2:40)
+## Python Review Exercise 2 (at least until 2:50)
 
 remember - look online, ask me, ask each other.... work in teams
 

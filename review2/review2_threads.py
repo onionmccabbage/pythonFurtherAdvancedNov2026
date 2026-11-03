@@ -2,18 +2,29 @@
 from threading import Thread
 import timeit
 
+from cityGen import genCities
+
+# create a thread-divvy version for Weds
+
 from weatherService import TempGetter
 
 def main():
+    cg = genCities() # we now have a city generator instance
     # maybe try using a generator for these cities (improve performance)
     # CITIES = ["Dublin","Cork","Limerick","Galway","Waterford","Drogheda","Kilkenny","Wexford","Sligo","Clonmel","Dundalk","Bray","Ennis","Tralee","Carlow","Naas","Athlone","Letterkenny","Tullamore","Killarney","Arklow","Cobh","Castlebar","Midleton","Mallow","Ballina","Enniscorthy","Wicklow","Cavan","Athy","Longford","Dungarvan","Nenagh","Trim","Thurles","Youghal","Monaghan","Buncrana","Ballinasloe","Fermoy","Westport","Carrick-on-Suir","Birr","Tipperary","Carrickmacross","Kinsale","Listowel","Clonakilty","Cashel","Macroom","Castleblayney","Kilrush","Skibbereen","Bundoran","Templemore","Clones","Newbridge","Mullingar","Balbriggan","Greystones","Leixlip","Tramore","Shannon","Gorey","Tuam","Edenderry","Bandon","Loughrea","Ardee","Mountmellick","Bantry","Boyle","Ballyshannon","Cootehill","Ballybay","Belturbet","Lismore","Kilkee","Granard"]
-    CITIES = [
-        'Athlone', 'Galway', 'Belfast', 
-        'Genoa', 'Cork', 'Kista'
-    ]
-    # here we have a list comprehension
-    threads = [TempGetter(c) for c in CITIES]
-    start = timeit.default_timer()
+    # CITIES = [
+    #     'Athlone', 'Galway', 'Belfast', 
+    #     'Genoa', 'Cork', 'Kista'
+    # ]
+    # here we have a list comprehension: one thread for each city
+    # threads = [TempGetter(c) for c in CITIES]
+    # start = timeit.default_timer()
+
+    # what if we have a limited number of threads
+    n_threads = 8
+
+
+
     # first we kick off all the threads
     # r=[t.start() for t in threads]
     for thread in threads:

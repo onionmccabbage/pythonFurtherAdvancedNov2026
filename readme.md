@@ -63,8 +63,8 @@ Recordings available here
   see https://realpython.com/python-gil/
   from 3.14 (Oct 7 2025) we can avoid the GIL
   see https://www.pythoncheatsheet.org/blog/python-3-14-breaking-free-from-gil
-* thread functions and thread classes
-* after lunch review exercise
+> thread functions and thread classes
+> after lunch review exercise
 * can we kill threads which have hung or other problems....
   we never kill threads (there is no mechanism in Python)
   we manage threads e.g. https://www.geeksforgeeks.org/python/python-different-ways-to-kill-a-thread/
@@ -72,6 +72,7 @@ Recordings available here
 * semaphore quantity depends on the capabilities of the asset being accessed
 
 ### Wednesday
+* create a thread-divvy version for Weds
 * generators and comprehension
 * a word about venv see https://python.land/virtual-environments/virtualenv
 * daemon threads, thread events

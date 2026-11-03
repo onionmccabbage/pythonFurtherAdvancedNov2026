@@ -4,14 +4,14 @@ import requests
 
 class TempGetter(Thread):
     def __init__(self, city):
-        super().__init__()
+        Thread.__init__(self)
         self.city = city # we ought to validate the city
     def run(self):
         url_template = (
             'http://api.openweathermap.org/data/2.5/'
             'weather?q={}&units={}&APPID=48f2d5e18b0d2bc50519b58cce6409f1')
         response = requests.get(url_template.format(self.city, 'metric'))
-        data = json.loads(response.text)
+        data = response.json() # json.loads(response.text)
         self.temperature = data['main']['temp']
         lon = 0
         lat = 52

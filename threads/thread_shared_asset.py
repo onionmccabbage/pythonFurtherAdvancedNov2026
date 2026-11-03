@@ -3,10 +3,10 @@ import time
 import random
 
 # here are some global assets (miht be files, db, u-servers etc.)
-testsAvailable = 32
-num_threads = 4
+testsAvailable = 1024
+num_threads = 64 # aim to balance number of threads with numer of tasks
 # we may provide a lock to make our code thread-safe
-lk = threading.Lock() # we have an isntance of the Lock
+lk = threading.RLock() # we have an instance of the Lock
 
 class TestRunner(threading.Thread):
     '''Emulate running tests that take time to complete'''
@@ -41,6 +41,8 @@ class TestRunner(threading.Thread):
 def main():
     global num_threads
     instanceList = []
+    # start a timer
+    start = time.perf_counter()
     for _ in range(0, num_threads):
         tester = TestRunner(_)
         instanceList.append(tester)
@@ -49,6 +51,8 @@ def main():
     # after we have started all the threads we usually choose to joni them all
     for _ in instanceList:
         _.join()
+    # measure time interval
+    print(f'Total time: {time.perf_counter()-start:0.4f} sec')
 
 if __name__ == '__main__':
     main()

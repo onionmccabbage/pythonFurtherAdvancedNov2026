@@ -53,17 +53,17 @@ Recordings available here
 
 ### Tuesday
 * how to access the course recordings
-> reminder: `__str__`, `__repr__` and `__slots__`
-> architectural patterns: inheritance, composition...
-> stateful pattern
+>tectural patterns: inheritance, composition...
+> stat reminder: `__str__`, `__repr__` and `__slots__`
+> archieful pattern
 > timing (as a performance metric)
 > functional design: use map, filter, reduce as performant functional operations
-* concurrency and parallel code
+> concurrency and parallel code
 * the GIL
   see https://realpython.com/python-gil/
   from 3.14 (Oct 7 2025) we can avoid the GIL
   see https://www.pythoncheatsheet.org/blog/python-3-14-breaking-free-from-gil
-* thread functions and thread classes
+> thread functions and thread classes
 * after lunch review exercise
 * can we kill threads which have hung or other problems....
   we never kill threads (there is no mechanism in Python)

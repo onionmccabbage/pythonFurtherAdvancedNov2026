@@ -41,6 +41,7 @@ Print out the temperature for each of the cities
 Optionaly include code to time how long it takes to retrieve all the weather reports
 Remember to code against the main types of error that might occur here
 
+
 Optional
 --------
 Also show other weather data, such as wind speed and direction, the weather description etc.

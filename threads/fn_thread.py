@@ -9,7 +9,6 @@ def myFn(n):
         print(f'{n} is working...')
         time.sleep(random.random()*0.1 )
 
-
 def main():
     '''create a number of threads each using our function'''
     t1 = Thread(target=myFn,args=(1,)) # args is always a tuple (here a one-member tuple)
@@ -24,6 +23,11 @@ def main():
     t2.join()
     t3.join()
     print('Main thread will only continue after the threads have (re)joined')
+
+    # it is good practice to tidy up
+    
+
+
 
 if __name__ == '__main__':
     main()

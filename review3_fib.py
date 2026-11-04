@@ -16,7 +16,7 @@ def fibA(n):
         return 1
     else:
         '''recursively call this function again'''
-        return ( fib1(n-1)+fib1(n-2) )
+        return ( fibA(n-1)+fibA(n-2) )
 
 def fibB(n):
     '''a more performant solution'''
@@ -25,7 +25,6 @@ def fibB(n):
         '''NB this does not mutate the existing tuple, it creates a new one'''
         sequence += (reduce( lambda a,b: a+b, sequence[-2:] ),) # careful - one-member tuple
     return sequence[-1] # access the last member of the collection
-
 
 def fibC(n): # on my laptop this is fastest
     a, b = 0, 1

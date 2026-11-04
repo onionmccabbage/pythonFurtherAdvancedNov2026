@@ -90,6 +90,7 @@ Recordings available here
   * then examine hte prof_out results
 * after lunch review exercise
 * prepare for Thursday  
+* security
 * observables and subscribers
 * RxPY https://rxpy.readthedocs.io/en/latest/index.html
        https://rxmarbles.com/

@@ -86,6 +86,8 @@ Recordings available here
 * Memory, performance and timing
 * New profiling features in 3.15 (and retirement of old profile tools)
 * profiling with @profile, cProfile and the new profiling tools in 3.15
+  * python -m cProfile -o prof_out <filename>
+  * then examine hte prof_out results
 * after lunch review exercise
 * prepare for Thursday  
 * observables and subscribers

@@ -1,7 +1,9 @@
 # here we carry out similar operations 
 # elsewhere we examine a memory profile of these ops
-
 import requests
+# we may use cProfile like this:
+# python -m cProfile -o profOut <filename>
+
 
 class CompareTechniques:
     def parse_list(self, word_list):

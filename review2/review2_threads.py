@@ -1,5 +1,5 @@
 import time
-from threading import Thread, Semaphore
+from threading import Thread, Semaphore, current_thread
 import requests
 from weather import Weather
 
@@ -13,6 +13,8 @@ n_threads = 4 # NB usually a power of two
 thread_list = []
 reports = []
 sem = Semaphore(1)
+
+# print( f'[{current_thread().name}] {w}')
 
 class WeatherGetter(Thread):
     def __init__(self):

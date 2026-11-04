@@ -71,7 +71,7 @@ Recordings available here
 > semaphore concurrent depends on the capabilities of the asset being accessed
 
 ### Wednesday
-* create a thread-divvy version for Weds
+> create a thread-divvy version for Weds
 * custom thread decorator to make methods thread safe
 * range generators and comprehension: really good for performance
 * a word about venv see https://python.land/virtual-environments/virtualenv

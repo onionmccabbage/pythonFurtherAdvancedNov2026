@@ -40,7 +40,6 @@ class Weather():
         report  = f'The weather in {self.city} is {self.desc} at {self.temp}C'
         return report
 
-
 if __name__ == '__main__':
     # exercise this module
     w_gen = Weather('Genoa', 'rainy', 9.04)

@@ -10,10 +10,17 @@ def lock_a_method(meth):
     global lk
     def locked_method(self, *args, **kwargs):
         '''this will be a locked version of the method'''
-        with lk:
-            print('locking (and releasing)')
-            return meth(self, *args, **kwargs) # NB ** will only pass kwargs if there are any
-        # when the 'with' ends, the lock is released automatically
+        # check if there is an attribute indicated locked
+        # we may provide a default as follows
+        already_locked = getattr(meth, '__is_locked', False) # return True or False
+        if already_locked:
+            pass
+        else:
+            with lk:
+                print('locking (and releasing)')
+                return meth(self, *args, **kwargs) # NB ** will only pass kwargs if there are any
+            # when the 'with' ends, the lock is released automatically
+    locked_method.__is_locked = True # attach an arbitrary value to the method
     return locked_method
 
 

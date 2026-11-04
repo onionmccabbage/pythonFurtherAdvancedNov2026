@@ -2,6 +2,7 @@ from threading import Thread, Lock, Semaphore, current_thread
 
 lk = Lock()
 
+# higher-order functions: where one function contains another function
 def lock_a_method(meth):
     '''this function will act as a decorator for any other method
     it will check if the method is already thread locked

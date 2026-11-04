@@ -1,9 +1,9 @@
 # here we carry out a profile of to_mem_profile
 from to_mem_profile import CompareTechniques
-import profiling # new in 3.15
+import profiling.tracing # new in 3.15
 
 if __name__ == '__main__':
-    with profiling.sampling.Profile() as pr:
+    with profiling.tracing.Profile() as pr:
         words = ['one', 'two', 'three', 'four', 'five'] # a list is an ordinal mutable collection of any data type
         compare = CompareTechniques()
         compare.parse_list(words)

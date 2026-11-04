@@ -73,10 +73,10 @@ Recordings available here
 ### Wednesday
 > create a thread-divvy version for Weds
 > custom thread decorator to make methods thread safe
-* range generators and comprehension: really good for performance
-* a word about venv see https://python.land/virtual-environments/virtualenv
+> range generators and comprehension: really good for performance
+> a word about venv see https://python.land/virtual-environments/virtualenv
 > daemon threads, thread events
-* the 'with' operator
+> the 'with' operator
 * asyncio (Python 3.7 or better)
   see https://docs.python.org/3/library/asyncio-task.html#coroutines
 * multiprocessing

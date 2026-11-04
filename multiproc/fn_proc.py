@@ -28,10 +28,5 @@ def main():
     t3.join()
     print('Main process will only continue after the processes have (re)joined')
 
-    # it is good practice to tidy up
-    
-
-
-
 if __name__ == '__main__':
     main()

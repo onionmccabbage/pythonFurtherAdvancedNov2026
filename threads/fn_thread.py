@@ -24,10 +24,7 @@ def main():
     t3.join()
     print('Main thread will only continue after the threads have (re)joined')
 
-    # it is good practice to tidy up
-    
-
-
+# there is no need to tidy up - processes and threads are automatically reclaimed
 
 if __name__ == '__main__':
     main()

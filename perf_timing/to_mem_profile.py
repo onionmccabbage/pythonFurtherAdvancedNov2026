@@ -14,7 +14,7 @@ class CompareTechniques:
     def parse_url(self, word_url):
         '''access a remote API, retrieve the contents and write to a text file'''
         response = requests.get(word_url) # this returns text
-        words = response.text()  # read the retrieved text
+        words = response.text  # read the retrieved text
         with open('url_list.txt', 'wt') as fout:
             # the URL returns a list of words, so no need ot add new line characters'
             fout.writelines(words)

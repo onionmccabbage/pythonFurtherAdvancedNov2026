@@ -25,3 +25,16 @@ print( g.__next__() )
 # comprehension: deal with every member of a collection comprehensively
 c = [doStuff(i) for i in r] # this is a list comprehension
 print(c) # we have a list
+
+# we may write our own custom generator
+import datetime
+def makeDateTimeStamp():
+    '''Generate a date-time stamp representing the moment this generator is invoked'''
+    while True: # an endless loop
+        t = datetime.datetime.now().strftime('%H:%M:%S:%f') # a date-time picture
+        yield t # yield makes an ordinary function behave as a generator
+
+if __name__ == '__main__':
+    mt = makeDateTimeStamp() # we have an instance of our generator
+    print( mt.__next__() ) # this will show the moment it is called
+

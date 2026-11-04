@@ -14,12 +14,11 @@ All my code will be in this repository
 * https://github.com/onionmccabbage/pythonFurtherAdvancedNov2026
 * NB this will only exist for a while after end of course
 
-
 Recordings available here
 * https://learn.neueda.com/course/482357
 * Sign up with any email/password
 * Course Reg Code: HGUWTO
-* Careful - these will only be available for a few days after the end of course
+* These will only be available for a few days after the end of course
 
 ### Monday
 > welcome
@@ -73,12 +72,10 @@ Recordings available here
 
 ### Wednesday
 * create a thread-divvy version for Weds
-* comclude threading: thread-safety decorator example (75 lines or so)
-* custom thread decorator to make classes and methods thread safe
+* custom thread decorator to make methods thread safe
 * range generators and comprehension: really good for performance
 * a word about venv see https://python.land/virtual-environments/virtualenv
 > daemon threads, thread events
-* solve the double-locking problem (both decorators)
 * the 'with' operator
 * asyncio (Python 3.7 or better)
   see https://docs.python.org/3/library/asyncio-task.html#coroutines

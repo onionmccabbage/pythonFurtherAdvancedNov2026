@@ -4,12 +4,12 @@ import requests
 from weather import Weather
 
 # some global assets
-# CITIES = ["Dublin","Cork","Limerick","Galway","Waterford","Drogheda","Kilkenny","Wexford","Sligo","Clonmel","Dundalk","Bray","Ennis","Tralee","Carlow","Naas","Athlone","Letterkenny","Tullamore","Killarney","Arklow","Cobh","Castlebar","Midleton","Mallow","Ballina","Enniscorthy","Wicklow","Cavan","Athy","Longford","Dungarvan","Nenagh","Trim","Thurles","Youghal","Monaghan","Buncrana","Ballinasloe","Fermoy","Westport","Carrick-on-Suir","Birr","Tipperary","Carrickmacross","Kinsale","Listowel","Clonakilty","Cashel","Macroom","Castleblayney","Kilrush","Skibbereen","Bundoran","Templemore","Clones","Newbridge","Mullingar","Balbriggan","Greystones","Leixlip","Tramore","Shannon","Gorey","Tuam","Edenderry","Bandon","Loughrea","Ardee","Mountmellick","Bantry","Boyle","Ballyshannon","Cootehill","Ballybay","Belturbet","Lismore","Kilkee","Granard"]
-CITIES = [
-    'Athlone', 'Galway', 'Belfast', 
-    'Genoa', 'Cork', 'Kista'
-]
-n_threads = 4
+CITIES = ["Dublin","Cork","Limerick","Galway","Waterford","Drogheda","Kilkenny","Wexford","Sligo","Clonmel","Dundalk","Bray","Ennis","Tralee","Carlow","Naas","Athlone","Letterkenny","Tullamore","Killarney","Arklow","Cobh","Castlebar","Midleton","Mallow","Ballina","Enniscorthy","Wicklow","Cavan","Athy","Longford","Dungarvan","Nenagh","Trim","Thurles","Youghal","Monaghan","Buncrana","Ballinasloe","Fermoy","Westport","Carrick-on-Suir","Birr","Tipperary","Carrickmacross","Kinsale","Listowel","Clonakilty","Cashel","Macroom","Castleblayney","Kilrush","Skibbereen","Bundoran","Templemore","Clones","Newbridge","Mullingar","Balbriggan","Greystones","Leixlip","Tramore","Shannon","Gorey","Tuam","Edenderry","Bandon","Loughrea","Ardee","Mountmellick","Bantry","Boyle","Ballyshannon","Cootehill","Ballybay","Belturbet","Lismore","Kilkee","Granard"]
+# CITIES = [
+#     'Athlone', 'Galway', 'Belfast', 
+#     'Genoa', 'Cork', 'Madrid'
+# ]
+n_threads = 4 # NB usually a power of two
 thread_list = []
 reports = []
 sem = Semaphore(1)
@@ -23,7 +23,8 @@ class WeatherGetter(Thread):
     def run(self):
         while len(CITIES)>0:
             sem.acquire()
-            self.city = CITIES.pop()
+            self.city = CITIES.pop() # we could use a city genertor here (or DB etc.
+            # print(CITIES)
             sem.release()
             url_template = (
                 'http://api.openweathermap.org/data/2.5/'
@@ -46,7 +47,7 @@ def main():
         thread.join()
     print(f"Time: {time.perf_counter() - start} seconds")
     for report in reports:
-        print(report)
+        print(report) # each report is a Weather isntance, with __str__
 
 if __name__ == '__main__':
     main()

@@ -2,6 +2,9 @@
 from to_mem_profile import CompareTechniques
 import profiling.tracing # new in 3.15 recommended, improvements over cProfile
 
+# we may also use a sampling profile (less interfering)
+# python -m profiling.sampling run <filename>
+
 
 if __name__ == '__main__':
     with profiling.tracing.Profile() as pr:

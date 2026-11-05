@@ -121,16 +121,16 @@ Recordings available here
    then you will also need to pip install numpy and pandas
 > numpy and data structures: the arange and array 
 > pandas: Series and DataFrame
-* NaN, creating stuctures, analysis (stats)
-* data cleansing and preparation
-* descriptive actionable  statistics
-* handling files and remote data
+> NaN, creating stuctures, analysis (stats)
+> data cleansing and preparation
+> descriptive actionable  statistics
+> handling files and remote data
 * data vizualisation with matplotlib
-* after lunch review exercise
+> after lunch review exercise
 * resolve date issue
-* cleaning data: NaN
-* merge data from several sources
-* security
+> cleaning data: NaN
+> merge data from several sources
+> security
 * statistical analysis and correlation
   REMEMBER: correlation does NOT prove CAUSATION
   https://www.tylervigen.com/spurious-correlations

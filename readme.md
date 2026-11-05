@@ -127,6 +127,8 @@ Recordings available here
 * handling files and remote data
 * data vizualisation with matplotlib
 * after lunch review exercise
+* resolve date issue
+* cleaning data: NaN
 * merge data from several sources
 * security
 * statistical analysis and correlation

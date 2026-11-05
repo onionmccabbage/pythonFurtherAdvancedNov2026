@@ -1,4 +1,4 @@
-### Review 4 (Data analysis) until tea break at 3:00
+### Review 4 (Data analysis) 1hr (until 2:50)
 
 Create a new Jupyter Notebook (or a simple python module)
 - read in external data (data/flights_small.csv) into a data frame

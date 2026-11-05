@@ -95,7 +95,7 @@ Recordings available here
        https://rxmarbles.com/
 
 ### Thursday
-* options for Jupyter Notebooks:
+> options for Jupyter Notebooks:
   - use Anaconda (NB it is likely you cannot use the free Anaconda within Ericsson)
   - pip install notebook (see https://jupyter.org/install)
   - pip install jupyter (or pip3 install...) (or python -m pip3 install ...)
@@ -115,11 +115,11 @@ Recordings available here
   - Jupyter notebooks
   - numpy
   - pandas
-* using Jupyter notebooks
+> using Jupyter notebooks
    Data sources (csv, xlsx, text, db, url...)
    you can 'pip install jupyter' then start it with 'python -m notebook'
    then you will also need to pip install numpy and pandas
-* numpy and data structures: the arange and array 
+> numpy and data structures: the arange and array 
 * pandas: Series and DataFrame
 * NaN, creating stuctures, analysis (stats)
 * data cleansing and preparation

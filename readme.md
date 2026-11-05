@@ -127,6 +127,7 @@ Recordings available here
 * handling files and remote data
 * data vizualisation with matplotlib
 * after lunch review exercise
+* merge data from several sources
 * security
 * statistical analysis and correlation
   REMEMBER: correlation does NOT prove CAUSATION

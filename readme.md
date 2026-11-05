@@ -102,6 +102,9 @@ Recordings available here
   - just use existing VSCode (or similar)
   - use cloud (e.g. colab https://colab.research.google.com/ or https://jupyter.org/try)
   - or just write normal python modules
+  - to invoke Jupyter:
+    - jupyter notebook
+    - python -m jupyter notebook
 * Python for Data Analysis
   see
   https://realpython.com/tutorials/data-science/

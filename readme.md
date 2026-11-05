@@ -90,7 +90,6 @@ Recordings available here
   * then examine hte prof_out results
 * after lunch review exercise
 * prepare for Thursday  
-* security
 * observables and subscribers
 * RxPY https://rxpy.readthedocs.io/en/latest/index.html
        https://rxmarbles.com/
@@ -102,7 +101,7 @@ Recordings available here
   - pip install jupyter (or pip3 install...) (or python -m pip3 install ...)
   - just use existing VSCode (or similar)
   - use cloud (e.g. colab https://colab.research.google.com/ or https://jupyter.org/try)
-  - or just write NORMAL python modules
+  - or just write normal python modules
 * Python for Data Analysis
   see
   https://realpython.com/tutorials/data-science/
@@ -113,11 +112,10 @@ Recordings available here
   - Jupyter notebooks
   - numpy
   - pandas
-  - matplotlib
 * using Jupyter notebooks
    Data sources (csv, xlsx, text, db, url...)
    you can 'pip install jupyter' then start it with 'python -m notebook'
-   then you will also need to pip install numpy, pandas etc.
+   then you will also need to pip install numpy and pandas
 * numpy and data structures: the arange and array 
 * pandas: Series and DataFrame
 * NaN, creating stuctures, analysis (stats)
@@ -126,11 +124,12 @@ Recordings available here
 * handling files and remote data
 * data vizualisation with matplotlib
 * after lunch review exercise
-
-### Friday
+* security
 * statistical analysis and correlation
   REMEMBER: correlation does NOT prove CAUSATION
   https://www.tylervigen.com/spurious-correlations
+
+### Friday
 * review of microservices and concurrency (this impacts on thread semaphores)
 * multi threading
 * asyncio microservices

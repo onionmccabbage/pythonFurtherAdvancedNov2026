@@ -120,7 +120,7 @@ Recordings available here
    you can 'pip install jupyter' then start it with 'python -m notebook'
    then you will also need to pip install numpy and pandas
 > numpy and data structures: the arange and array 
-* pandas: Series and DataFrame
+> pandas: Series and DataFrame
 * NaN, creating stuctures, analysis (stats)
 * data cleansing and preparation
 * descriptive actionable  statistics

@@ -25,6 +25,8 @@ def main():
     @app.route('/category/<cat>') # these values in <> are injected as REST values
     @app.route('/category/<cat>/<id>')
     def category(cat='people', id=1): # we provide sensible default values
+        # REST we REpresent the STate on the URL
+        # we could invoke our SWAPI microservice....
         return f'Category is {cat} id is {id}'
     # here is a route which will invoke an HTML template
     @app.route('/menu')

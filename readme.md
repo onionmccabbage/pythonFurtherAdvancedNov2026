@@ -139,6 +139,7 @@ Recordings available here
 * review of microservices and concurrency (this impacts on thread semaphores)
 * multi threading
 * asyncio microservices
+* efficiency
 * we can control the number of concurrent accesses to our microservice....
 * resources for numpy, pandas, matplotlib, flask, django
 * Flask:

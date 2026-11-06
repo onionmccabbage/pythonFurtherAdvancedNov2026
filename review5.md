@@ -1,4 +1,5 @@
-### Review Exercise: Microservices
+### Review Exercise: Microservices 1hr 20
+(until 2:45)
 
 Write a microservice using 'socket' or 'asyncio' (whichever you prefer)
 (write a new one or extend the existing one)
@@ -7,13 +8,14 @@ Write a microservice using 'socket' or 'asyncio' (whichever you prefer)
 * If the client request is 'people', 'planets', 'vehicles', 'starships' or 'species' then the server makes a call (using the requests library) to 
 * https://swapi.dev/api/<category>/1 
 (where category is validated as one of the above)
-* When the data comes back, find just the 'name' value and return that to the client
-* Handle 'not found 404' responses
+* (await) When the data comes back, find just the 'name' value and return that to the client
+* Handle '{"detail":"Not found."}' responses
 * (optionally you could write the 'SwapiService' in a separate module)
 * On the server, if the client request can be cast as an integer, make a request to
 * https://swapi.dev/api/people/<int>
 * then return some details of that person to the client 
 * (e.g. name, eyes, hair height...)
+* or else get any categry for that integer
 
 Write (or edit) a client that sends suitable requests and displays the received server response
 
@@ -36,4 +38,3 @@ Then for every sucessful request write the class members to a tex file
 On other threads or coroutines make further requests for the films related to this data
 
 Show the film names in the response
-

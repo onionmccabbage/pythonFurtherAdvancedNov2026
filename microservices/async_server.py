@@ -21,7 +21,7 @@ async def handleRequests( reader, writer ):
 
 async def main():
     '''start the service'''
-    server = await asyncio.start_server(handleRequests, 'localhost', 8888)
+    server = await asyncio.start_server(handleRequests, 'localhost', 8889)
     print('Async Server is running')
     async with server: # with will always clean up when done
         await server.serve_forever()

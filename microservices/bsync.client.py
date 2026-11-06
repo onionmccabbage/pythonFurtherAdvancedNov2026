@@ -6,7 +6,7 @@ async def client(msg):
     NB the server need not be async, it could be a conventional socket server'''
     # convert any incoming data to bytes
     b = makeBytes(msg)
-    reader, writer = await asyncio.open_connection('localhost', 8888)
+    reader, writer = await asyncio.open_connection('localhost', 8889)
     print(f'Client is sending {b}')
     writer.write(b)
     await writer.drain() # wait for the entire stream to be sent
@@ -20,6 +20,6 @@ if __name__ == '__main__':
     if len(sys.argv)>1:
         msg = ', '.join(sys.argv[1:])
     else:
-        msg  =range(0,256) # use bytes for the first 256 ANSII characters
+        msg  =range(0,60) # use bytes for the first 256 ANSII characters
     # we need to run our client
     asyncio.run( client(msg) )

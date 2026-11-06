@@ -15,7 +15,7 @@ def server():
             buffer = client.recv(1024) # usually read just the first bytes of the client
             # we may then decide whether to proceed
             buf_str = buffer.decode() # convert hte byte string to a normal text string
-            print(f'Server received {buf_str}')
+            print(f'Server received {buf_str} on {threading.current_thread().name}')
             # persist this into the byte file on a separate thread
             # NB we would need a lock/sepahore on our byte file
             t = threading.Thread(target=writeBytes, args=(buffer,))

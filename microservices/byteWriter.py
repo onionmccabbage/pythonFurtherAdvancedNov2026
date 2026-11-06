@@ -1,4 +1,4 @@
-from threading import Semaphore
+from threading import Semaphore, current_thread
 
 sem = Semaphore()
 def writeBytes(n):
@@ -6,6 +6,7 @@ def writeBytes(n):
     NB much data is not-textual
     Also, bytes are more efficient'''
     global sem
+    print(f'Writing to bytefile from { current_thread().name }')
     with open('my_bytes', 'ab') as fout: # 'ab' will append bytes
         if type(n) == bytes:
             sem.acquire()

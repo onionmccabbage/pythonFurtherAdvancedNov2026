@@ -1,3 +1,7 @@
 default
 hello
 quit
+this, is, written, using, thread, safe, byte, writer
+quit
+hello
+quit

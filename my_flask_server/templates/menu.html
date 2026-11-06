@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <article>
+        <section>
+            <h3>Menu</h3>
+            <ul>
+                <li>Salad</li>
+                <li>Fish</li>
+                <li>Aubergine</li>
+            </ul>
+            <aside>
+                <!-- Flask includes a simple syntax
+                 We can generate HTML from Flask
+                Flask will use Python to write the HTML from this code -->
+                {% if specials == None %} 
+                <p>There are no specials today</p>
+                {% else %}
+                <h4>Specials...</h4>
+                <p>{{specials}}</p>
+                {% endif %}
+            </aside>
+        </section>
+    </article>
+</body>
+</html>

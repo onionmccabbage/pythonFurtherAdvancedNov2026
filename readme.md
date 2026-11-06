@@ -143,6 +143,7 @@ Recordings available here
 > we can control the number of concurrent accesses to our microservice....
 > after lunch review exercise
 * resources for numpy, pandas, matplotlib, flask, django
+  
 * Flask:
   to run as a debug server: flask --app my_flask.py --debug run
   or else debug=True in the app run declaration

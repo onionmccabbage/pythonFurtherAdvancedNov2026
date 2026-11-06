@@ -143,12 +143,16 @@ Recordings available here
 > we can control the number of concurrent accesses to our microservice....
 > after lunch review exercise
 * resources for numpy, pandas, matplotlib, flask, django
-  
-* Flask:
+* https://numpy.org/
+* https://pandas.pydata.org/
+* https://matplotlib.org/
+* https://flask.palletsprojects.com/en/stable/
+* https://docs.djangoproject.com/en/6.1/
+
+> Flask:
   to run as a debug server: flask --app my_flask.py --debug run
   or else debug=True in the app run declaration
   see https://flask.palletsprojects.com/en/2.3.x/
-
 
 - end of course feedback
   - https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LDIP-539-06396&OID=521174&Title=Beyond%20Advanced%20Python&Owner=Nitin%20Tiwari

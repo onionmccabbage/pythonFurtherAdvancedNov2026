@@ -125,9 +125,9 @@ Recordings available here
 > data cleansing and preparation
 > descriptive actionable  statistics
 > handling files and remote data
-* data vizualisation with matplotlib
+> data vizualisation
 > after lunch review exercise
-* resolve date issue
+> resolve date issue
 > cleaning data: NaN
 > merge data from several sources
 > security

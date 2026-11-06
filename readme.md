@@ -131,23 +131,24 @@ Recordings available here
 > cleaning data: NaN
 > merge data from several sources
 > security
-* statistical analysis and correlation
+> statistical analysis and correlation
   REMEMBER: correlation does NOT prove CAUSATION
   https://www.tylervigen.com/spurious-correlations
 
 ### Friday
-* review of microservices and concurrency (this impacts on thread semaphores)
+> review of microservices and concurrency (this impacts on thread semaphores)
 * multi threading
-* asyncio microservices
+> asyncio microservices
 * efficiency
-* we can control the number of concurrent accesses to our microservice....
+> we can control the number of concurrent accesses to our microservice....
+* after lunch review exercise
 * resources for numpy, pandas, matplotlib, flask, django
 * Flask:
   to run as a debug server: flask --app my_flask.py --debug run
   or else debug=True in the app run declaration
   see https://flask.palletsprojects.com/en/2.3.x/
-* after lunch review exercise
 
 
 - end of course feedback
+  - https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LDIP-539-06396&OID=521174&Title=Beyond%20Advanced%20Python&Owner=Nitin%20Tiwari
   - https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/57b081b3-524e-4ada-80d2-0d94500bc310

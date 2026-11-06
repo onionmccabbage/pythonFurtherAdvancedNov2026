@@ -8,8 +8,14 @@ async def client(msg):
     b = makeBytes(msg)
     reader, writer = await asyncio.open_connection('localhost', 8889)
     print(f'Client is sending {b}')
+    # no await
     writer.write(b)
+    # await for co-routine to complete
+    # NB we use await for I/O bound operations
+    # or anything outside the control of Python
+    # typially these operations may return timeouts
     await writer.drain() # wait for the entire stream to be sent
+    # no await
     writer.close()
 
 def makeBytes(n):
@@ -20,6 +26,6 @@ if __name__ == '__main__':
     if len(sys.argv)>1:
         msg = ', '.join(sys.argv[1:])
     else:
-        msg  =range(0,60) # use bytes for the first 256 ANSII characters
+        msg = range(0,60) # use bytes for the first 256 ANSII characters
     # we need to run our client
     asyncio.run( client(msg) )
